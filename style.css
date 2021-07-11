@@ -1,0 +1,388 @@
+:root{
+    --titlegray: rgb(83, 83, 83);
+    --pgray: rgb(90, 90, 90);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 1px 0.1px 7px black;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.logo{
+    margin-right: 200px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.nav ul li a:hover {
+    color: rgb(131, 85, 0);
+    transition: 400ms;
+}
+
+
+#faleconosco a{
+    margin-left: 10px;
+    background-color: #00b100ed;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid #00b100;
+}
+
+#faleconosco a:hover {
+    background-color: white;
+    color: #00b100;
+}
+
+
+.imgfundo {
+    background-image: url(./imgs/fundoteste.png);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgfundo p {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.imgfundo p:first-child {
+    margin-bottom: 30px;
+}
+
+.imgfundo p:last-child{
+    font-size: 2.5rem;
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+    flex-wrap: wrap;
+    color: var(--pgray);
+}
+
+#texto {
+    margin-right: 100px;
+}
+
+#texto h1 {
+    font-size: 3.5rem;
+    text-decoration: underline;
+    color: var(--titlegray);
+}
+
+#texto p {
+    width: 500px;
+    margin-top: 40px;
+}
+
+#fotolucas img{
+    border-radius: 10px;
+}
+
+
+#depoimentos {
+    padding: 180px 0px 0px 0px;
+    margin-bottom: 60px;
+
+}
+
+#depoimentos h2{
+    text-align: center;
+    font-size: 2.2rem;
+    text-decoration: underline;
+    margin: 60px 0px;
+    color: var(--titlegray);
+}
+
+.deps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.deps p {
+    margin: 30px 0px;
+    color: var(--pgray);
+}
+
+.deps h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--titlegray);
+}
+
+.dep {
+    margin: 0 60px;
+    width: 300px;
+}
+
+.dep span {
+    color: var(--pgray);
+}
+
+#vejamais {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#vejamais a {
+    color: black;
+    text-decoration: underline;
+}
+
+#localcontato {
+    margin-top: 160px;
+    height: 50vh;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contato {
+    width: 300px;
+    margin-left: 50px;
+}
+
+#contato h2 {
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+
+#contato img {
+    margin-right: 5px;
+}
+
+.endereco {
+    display: flex;
+}
+
+.email {
+    display: flex;
+}
+
+.telefone {
+    display: flex;
+}
+
+.item {
+    margin-top: 20px;
+}
+
+#faleconosco2 {
+    margin-top: 20px;
+    display: flex;
+    height:42px;
+    width: 120px;
+    background-color: #00b100;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid #00b100 ;
+    color: white;
+}
+
+#faleconosco2:hover{
+    background-color: rgb(240, 240, 240);
+    color: #00b100;
+}
+
+
+footer {
+    height: 40px;
+    display: flex;
+    background: rgb(41, 41, 41);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@media (max-width:1263px){
+    #depoimentos {
+        text-align: center;
+    }
+
+    .dep3 {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:1080px){
+
+    #texto {
+        margin-right: 0px;
+    }
+}
+
+
+@media (max-width:1049px){
+
+    
+    #local iframe{
+        width: 400px;
+    }
+
+
+}
+
+@media (max-width:1010px){
+
+    
+    #texto {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width:984px){
+    .nav ul {
+        display: none;
+    }
+}
+
+
+@media (max-width:839px){
+    .dep2 {
+        margin-top: 70px;
+    }
+
+    .dep3 {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width:749px){
+
+     #contato h2 {
+         text-align: left;
+         margin-bottom: 50px;
+     }
+
+     #contato {
+         margin: 10px;
+     }
+}
+
+@media (max-width:589px){
+
+
+    .header {
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        margin: 0;
+        
+    }
+}
+
+
+@media (max-width:530px) {
+    #texto p {
+        width: 350px;
+    }
+}
+
+
+@media (max-width:518px){
+    .imgfundo {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:500px){
+
+    #sobre p {
+        font-size: 1rem;
+        margin: initial 500px;
+    }
+
+    #fotolucas img{
+        height: 500px;
+    }
+}
+
+@media (max-width:418px){
+    #local iframe{
+        width: 300px;
+    }
+}
+
+@media (max-width:466px){
+    .imgfundo {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:389px){
+    #faleconosco{
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 0px;
+    }
+
+    #fotolucas img{
+        height: 400px;
+    }
+
+    #texto p {
+        width: 300px;
+    }
+}
+
+@media (max-width:365px){
+    .imgfundo {
+        font-size: 0.6rem;
+    }
+}
